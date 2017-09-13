@@ -12,7 +12,7 @@ class TaskCollection {
 
 	log() { 
 		// function replaced by ES6 function =>
-		// parentesis can be omitted as well as we only have one argument
+		// parentesis can be omitted as well as we only have one argument. When using multiple args you need them.
 		// and as we only have one line of logic we can move curly braces
 		// and move all to one line
 		this.tasks.forEach(task => console.log(task));
