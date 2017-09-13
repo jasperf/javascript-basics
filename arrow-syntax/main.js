@@ -1,10 +1,10 @@
 class TaskCollection {
 	constructor(tasks = []) {
-		// Task defaults to an empty array
+		// Tasks defaults to an empty array
 		this.tasks = tasks;
 	}
 
-	// log() { // log function using old es5 syntax
+	// log() { // log function using old ES5 syntax
 	// 	this.tasks.forEach(function(task) {
 	// 		console.log(task);
 	// 	})
@@ -13,9 +13,9 @@ class TaskCollection {
 	log() { 
 		// function replaced by ES6 function =>
 		// parentesis can be omitted as well as we only have one argument
-		this.tasks.forEach(task => {
-			console.log(task);
-		})
+		// and as we only have one line of logic we can move curly braces
+		// and move all to one line
+		this.tasks.forEach(task => console.log(task))
 		}
 }
 class Task{
